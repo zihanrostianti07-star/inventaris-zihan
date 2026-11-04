@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.form-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: #f8fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    background: #ffffff;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.btn {
+    flex: 1;
+    display: inline-block;
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-edit {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background: #1d4ed8;
+}
+
+.btn-kembali {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-kembali:hover {
+    background: #cbd5e1;
+}
+
+/* style.css - dipakai oleh login.php dan registrasi.php */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    color: #1e293b;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 45%, #7c3aed 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+body::before {
+    width: 420px;
+    height: 420px;
+    top: -140px;
+    left: -120px;
+}
+
+body::after {
+    width: 520px;
+    height: 520px;
+    bottom: -220px;
+    right: -160px;
+}
+
+.container {
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 36px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.35);
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.brand-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.45);
+}
+
+.brand h3 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.brand p {
+    margin-top: 6px;
+    font-size: 0.92rem;
+    color: #64748b;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: #334155;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #94a3b8;
+    transition: color 0.2s;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 13px 14px 13px 42px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    background: #f8fafc;
+    color: #1e293b;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.input-icon input::placeholder {
+    color: #a0aec0;
+}
+
+.input-icon input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.input-icon:focus-within i {
+    color: #2563eb;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.btn {
+    width: 100%;
+    display: block;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.2s;
+}
+
+.btn-edit {
+    color: #ffffff;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+.btn-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.45);
+}
+
+.btn-edit:active {
+    transform: translateY(0);
+}
+
+.pindah {
+    text-align: center;
+    font-size: 0.92rem;
+    color: #64748b;
+}
+
+.pindah a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.pindah a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .form-card {
+        padding: 30px 22px;
+    }
+}
